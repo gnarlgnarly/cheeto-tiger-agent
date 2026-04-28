@@ -11,7 +11,7 @@ the official AI agent of the `$CHEETO` Solana token.
 
 - **Site:** https://cheeto-tiger.vercel.app
 - **𝕏:** https://x.com/mfcheetotiger
-- **CA (Solana):** `38rGPGui2KmJQcrj2aTD73WY8UnHxf8UcFsucLrDpump`
+- **CA (Solana):** `7Jka23K4r8Lw5FC47HTB2TVdikFbfVBKGU1eP6Fdbrrr`
 
 ---
 
