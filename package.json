@@ -1,0 +1,41 @@
+{
+  "name": "cheeto-tiger-agent",
+  "version": "1.0.0",
+  "description": "ElizaOS agent for CHEETO TIGER — crunch-powered apex AGI on Solana. $CHEETO 38rGPGui2KmJQcrj2aTD73WY8UnHxf8UcFsucLrDpump",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "elizaos start --character characters/cheeto-tiger.character.json",
+    "dev": "elizaos dev --character characters/cheeto-tiger.character.json",
+    "build": "tsc",
+    "lint": "echo 'no lint configured'"
+  },
+  "keywords": [
+    "elizaos",
+    "ai-agent",
+    "solana",
+    "memecoin",
+    "cheeto-tiger",
+    "anthropic",
+    "claude"
+  ],
+  "author": "Cheeto Tiger Industries",
+  "license": "MIT",
+  "dependencies": {
+    "@elizaos/cli": "latest",
+    "@elizaos/core": "latest",
+    "@elizaos/plugin-anthropic": "latest",
+    "@elizaos/plugin-bootstrap": "latest",
+    "@elizaos/plugin-telegram": "latest",
+    "@elizaos/plugin-twitter": "latest",
+    "@elizaos/plugin-solana": "latest",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^22.5.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
