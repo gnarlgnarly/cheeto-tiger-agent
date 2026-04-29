@@ -12,9 +12,10 @@ import { BootSequence } from "@/components/BootSequence";
 import { FYQ } from "@/components/FYQ";
 import { HoloCard } from "@/components/HoloCard";
 import { AgentTab } from "@/components/AgentTab";
+import { SnakeTab } from "@/components/SnakeTab";
 import { TIER_LIST, type TierId } from "@/lib/tiers";
 
-type Tab = "mint" | "agent";
+type Tab = "mint" | "snake" | "agent";
 
 interface Supply { minted: number; max: number }
 type SupplyMap = Record<TierId, Supply>;
@@ -68,6 +69,9 @@ export default function HomePage() {
             <button className={`tab-btn ${tab === "mint" ? "active" : ""}`} onClick={() => setTab("mint")}>
               🐅 MINT
             </button>
+            <button className={`tab-btn ${tab === "snake" ? "active" : ""}`} onClick={() => setTab("snake")}>
+              🐍 ARCADE
+            </button>
             <button className={`tab-btn ${tab === "agent" ? "active" : ""}`} onClick={() => setTab("agent")}>
               AGENT
             </button>
@@ -88,6 +92,8 @@ export default function HomePage() {
 
       {tab === "agent" ? (
         <AgentTab />
+      ) : tab === "snake" ? (
+        <SnakeTab />
       ) : (
         <>
           {/* ── HERO ── */}
